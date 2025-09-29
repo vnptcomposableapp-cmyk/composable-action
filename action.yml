@@ -1,6 +1,6 @@
-name: "Plasmic action"
-description: "Performs actions in Plasmic projects"
-author: "Plasmic <ops@plasmic.app>"
+name: "Composable Action"
+description: "Performs composable sync and build actions"
+author: "Composable Team"
 inputs:
   run:
     description: "Action to perform ('init', 'sync', 'build')"

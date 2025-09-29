@@ -27,9 +27,13 @@
     "@actions/github": "^5.0.0",
     "@sentry/node": "^6.2.5",
     "@sentry/tracing": "^6.2.5",
+    "axios": "^1.12.2",
     "nanoid": "^3.1.22",
     "sample-create-composable-app": "^0.0.115",
-    "semver": "^7.4.0"
+    "semver": "^7.4.0",
+    "socket.io-client": "^4.8.1",
+    "utility-types": "^3.11.0",
+    "winston": "^3.17.0"
   },
   "devDependencies": {
     "@types/node": "^14.14.37",
