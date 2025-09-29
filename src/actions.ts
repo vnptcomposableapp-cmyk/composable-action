@@ -7,7 +7,7 @@ import {
   mkPrBranchName,
   Outputs,
 } from "./util";
-import { create, setMetadata } from "create-plasmic-app";
+import { create, setMetadata } from "sample-create-composable-app";
 
 export type RunAction = "init" | "sync" | "build";
 export type Platform = "nextjs" | "gatsby" | "react" | "";
@@ -72,7 +72,7 @@ export class PlasmicAction {
 
   /**
    * Detects if there is a project in the working directory (by testing
-   * package.json existence). If there isn't, use create-plasmic-app to
+   * package.json existence). If there isn't, use sample-create-composable-app to
    * create a new one.
    *
    * @returns {synced} boolean indicating whether projectId was synced or not.
