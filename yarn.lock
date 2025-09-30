@@ -1542,15 +1542,15 @@ safe-stable-stringify@^2.3.1:
   resolved "https://registry.npmjs.org/safer-buffer/-/safer-buffer-2.1.2.tgz"
   integrity sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==
 
-sample-composable-cli@^0.1.343:
-  version "0.1.343"
-  resolved "https://registry.npmjs.org/sample-composable-cli/-/sample-composable-cli-0.1.343.tgz"
-  integrity sha512-R8Ow+46q7Z1q+3KIZP5VVlgdojV+eGFvoN5VX/2yaXrQTeyT+Wk2+pk+Sc4FxccUg2rhZ93piI/gNdrw8KTRFA==
+sample-composable-cli@^0.1.344:
+  version "0.1.344"
+  resolved "https://registry.npmjs.org/sample-composable-cli/-/sample-composable-cli-0.1.344.tgz"
+  integrity sha512-DeiBdj3oBxsnStal34cMhzu5L8Q5/WwSGZZVv1ee9TClbOsgUGVa2IaUlSqmc5gdQwAYHpirW0DHmINdZQ+Jhw==
 
-sample-create-composable-app@^0.0.115:
-  version "0.0.115"
-  resolved "https://registry.npmjs.org/sample-create-composable-app/-/sample-create-composable-app-0.0.115.tgz"
-  integrity sha512-UpHJMH9E0q5aRYHwXhTxrDT9jN1JNt3UDKobzomNN4dRb6rUI5OMn9xElF4iOW2m3hD+9rSpcERuPMgHA+g8KQ==
+sample-create-composable-app@^0.0.116:
+  version "0.0.116"
+  resolved "https://registry.npmjs.org/sample-create-composable-app/-/sample-create-composable-app-0.0.116.tgz"
+  integrity sha512-sJJ/vdjIH5lVaJ6XUawdbMB3b2zwGqutZyQyEy/fGBF59viCUoBx+9FU0Tf1CUxAi1oL6LaTuaqeQTKpxRnepw==
   dependencies:
     "@sentry/node" "^6.2.2"
     chalk "^4.1.0"
@@ -1559,7 +1559,7 @@ sample-create-composable-app@^0.0.115:
     glob "^7.1.6"
     inquirer "^8.0.0"
     lodash "^4.17.21"
-    sample-composable-cli "^0.1.343"
+    sample-composable-cli "^0.1.344"
     semver "^7.3.5"
     upath "^2.0.1"
     update-notifier "^5.1.0"
