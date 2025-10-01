@@ -51,6 +51,7 @@ jobs:
 | `directory` | Working directory relative to repository root | No | - |
 | `sync_action` | Sync action to perform ('commit', 'pr') | No | - |
 | `skip_if_plasmic` | Skip build if last commit was automated | No | - |
+| `disable_ssl_verification` | Disable SSL certificate verification (useful for ngrok) | No | `false` |
 
 ## Outputs
 
@@ -98,6 +99,25 @@ jobs:
     platform: 'nextjs'
     directory: './frontend'
 ```
+
+### Using with ngrok (Development/Testing)
+
+When testing with ngrok tunnels, you may encounter SSL certificate errors. Use the `disable_ssl_verification` parameter to bypass SSL verification:
+
+```yaml
+- name: Sync with ngrok backend
+  uses: vnptcomposableapp-cmyk/composable-action@main
+  with:
+    run: 'sync'
+    project_id: ${{ secrets.PROJECT_ID }}
+    project_api_token: ${{ secrets.PROJECT_API_TOKEN }}
+    github_token: ${{ secrets.GITHUB_TOKEN }}
+    disable_ssl_verification: 'true'  # Required for ngrok tunnels
+    sync_action: 'commit'
+    title: 'Auto-sync with ngrok backend'
+```
+
+⚠️ **Security Warning**: Only use `disable_ssl_verification: 'true'` in development/testing environments with ngrok. Never use this in production as it makes your connections vulnerable to man-in-the-middle attacks.
 
 ## Development
 

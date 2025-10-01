@@ -37,6 +37,7 @@ export type PlasmicActionOptions = {
   description: string;
 
   skipIfPlasmic: boolean;
+  disableSslVerification: boolean;
 };
 
 export class PlasmicAction {
@@ -52,6 +53,12 @@ export class PlasmicAction {
     this.remote = args.githubToken
       ? `https://x-access-token:${args.githubToken}@github.com/${process.env["GITHUB_REPOSITORY"]}.git`
       : undefined;
+
+    // Handle SSL verification bypass for ngrok tunnels
+    if (args.disableSslVerification) {
+      console.log("Warning: SSL certificate verification is disabled.");
+      process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
+    }
   }
 
   async run(): Promise<Partial<Outputs>> {

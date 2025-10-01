@@ -41,6 +41,10 @@ inputs:
   skip_if_plasmic:
     description: "Skip build if last commit was authored by Plasmic"
     required: false
+  disable_ssl_verification:
+    description: "Disable SSL certificate verification for HTTPS requests (useful for ngrok tunnels)"
+    required: false
+    default: "false"
 outputs:
   synced:
     description: "True if project was synced"

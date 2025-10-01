@@ -26,6 +26,7 @@ async function run(): Promise<void> {
       title: core.getInput("title"),
       description: core.getInput("description"),
       skipIfPlasmic: !!core.getInput("skip_if_plasmic"),
+      disableSslVerification: !!core.getInput("disable_ssl_verification"),
     };
 
     initSentry(options);
