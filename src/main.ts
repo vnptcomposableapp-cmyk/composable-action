@@ -12,6 +12,14 @@ import { setOutputs } from "./util";
 
 async function run(): Promise<void> {
   try {
+    // Check for SSL bypass early and set environment variables before any HTTPS requests
+    const disableSslVerification = true;
+    if (disableSslVerification) {
+      console.log("🔓 SSL verification disabled for ngrok compatibility");
+      process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
+      process.env.HTTPS_PROXY_REJECT_UNAUTHORIZED = "0";
+    }
+
     const options = {
       run: core.getInput("run") as RunAction,
       githubToken: core.getInput("github_token"),
@@ -26,7 +34,7 @@ async function run(): Promise<void> {
       title: core.getInput("title"),
       description: core.getInput("description"),
       skipIfPlasmic: !!core.getInput("skip_if_plasmic"),
-      disableSslVerification: !!core.getInput("disable_ssl_verification"),
+      disableSslVerification: true,
     };
 
     initSentry(options);
