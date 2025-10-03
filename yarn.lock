@@ -1547,10 +1547,10 @@ sample-composable-cli@^0.1.350:
   resolved "https://registry.npmjs.org/sample-composable-cli/-/sample-composable-cli-0.1.350.tgz"
   integrity sha512-BB+iBhuTpMyhaR1HiU71Px6fTDq1jbmNoah+YJtJao2EmiKFimyxN8omisa17Fiu72zBoEX63x6G6E+zlYi62A==
 
-sample-create-composable-app@^0.0.123:
-  version "0.0.123"
-  resolved "https://registry.npmjs.org/sample-create-composable-app/-/sample-create-composable-app-0.0.123.tgz"
-  integrity sha512-WgS4Fgt+e9YX5alciMRb7D+6gEXxeND0TNem1VA1bxq780LvRH0u0jOCKrL7Jt3XAJpRC+yzau6w4+uE1xKseQ==
+sample-create-composable-app@^0.0.124:
+  version "0.0.124"
+  resolved "https://registry.npmjs.org/sample-create-composable-app/-/sample-create-composable-app-0.0.124.tgz"
+  integrity sha512-+HtD/5LF07bAiHXY4C1EVjpa+UGTOyOozCo+ak0u3p2jWTgYVUWCX5UIc1nDx+PzfvIQGTy5PY16ODH/MFxk9g==
   dependencies:
     "@sentry/node" "^6.2.2"
     chalk "^4.1.0"
