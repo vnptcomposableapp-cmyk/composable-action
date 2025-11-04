@@ -39,6 +39,8 @@ async function run(): Promise<void> {
 
     initSentry(options);
 
+    console.log("options:", JSON.stringify(options));
+
     const action = new PlasmicAction(options);
     const outputs = await action.run();
     setOutputs(outputs);
