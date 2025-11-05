@@ -127,6 +127,9 @@ export class PlasmicAction {
       source: "plasmic-action",
     });
     const relTmpDir = "tmp-cpa";
+    console.log(`resolvedPath: ${path.resolve(this.opts.cwd, relTmpDir)}`);
+    console.log(`this.opts.cwd: ${this.opts.cwd}`);
+    console.log(`relTmpDir: ${relTmpDir}`);
     await create({
       resolvedProjectPath: path.resolve(this.opts.cwd, relTmpDir),
       projectId: this.args.projectId,
